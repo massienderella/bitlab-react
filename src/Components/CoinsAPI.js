@@ -2,13 +2,11 @@ import React, {Component} from 'react';
 import DisplayInfo from './DisplayInfo';
 
 class CoinsAPI extends Component {
-
   constructor(){
     super();
     this.state = {
       data: null,
     };
-
   }
  
   componentDidMount(){
@@ -21,19 +19,20 @@ class CoinsAPI extends Component {
     .then(parsedJSON => this.setState({data: parsedJSON.bpi}))
     .catch(error => console.log('Error',error))
   }
+
   render (){
     if (this.state.data) {
       return (
-      <div>
+      <div> 
         <DisplayInfo
-          rate = {this.state.data.CLP.rate}
-          description = {this.state.data.CLP.description}
-          code = {this.state.data.CLP.code}
+          rate = { this.state.data.CLP.rate }
+          description = { this.state.data.CLP.description }
+          code = { this.state.data.CLP.code }
         />
         <DisplayInfo
-          rate = {this.state.data.USD.rate}
-          description = {this.state.data.USD.description}
-          code = {this.state.data.USD.code}
+          rate = { this.state.data.USD.rate }
+          description = { this.state.data.USD.description }
+          code = { this.state.data.USD.code }
         />
       </div>
     );

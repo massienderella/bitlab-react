@@ -33,11 +33,11 @@ class Coins extends Component {
           <h1> {this.state.coinsbit}</h1>
         </div>
         <div>
-          <h2>Ingresa tus bit coins</h2>
+          <h4>Ingresa tus bit coins</h4>
           <Input setCoins= {this.setCoins} />
         </div>
         <div>
-          <h2>El precio del Bitcon is </h2>
+          <h4>El precio del Bitcon is </h4>
           <CoinsAPI/>
         </div>
       </div>
