@@ -1,0 +1,16 @@
+.Titles{
+  padding-top: 20%;
+  color: white;
+  font-weight: bold;
+}
+
+.Titles h1{
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 2%;
+  font-size: 40px;
+}
+
+.Titles p{
+  background-color: rgba(0,0,0,0.5);
+  padding-bottom: 2%;
+}
