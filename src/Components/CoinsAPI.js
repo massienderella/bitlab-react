@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import DisplayInfo from './DisplayInfo';
 
-
 class CoinsAPI extends Component {
-
   constructor(){
     super();
     this.state = {
@@ -27,14 +25,14 @@ class CoinsAPI extends Component {
       return (
       <div> 
         <DisplayInfo
-          rate = {this.state.data.CLP.rate}
-          description = {this.state.data.CLP.description}
-          code = {this.state.data.CLP.code}
+          rate = { this.state.data.CLP.rate }
+          description = { this.state.data.CLP.description }
+          code = { this.state.data.CLP.code }
         />
         <DisplayInfo
-          rate = {this.state.data.USD.rate}
-          description = {this.state.data.USD.description}
-          code = {this.state.data.USD.code}
+          rate = { this.state.data.USD.rate }
+          description = { this.state.data.USD.description }
+          code = { this.state.data.USD.code }
         />
       </div>
     );
