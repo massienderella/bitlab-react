@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './../Input.css'
 
 
 class Input extends Component { 
@@ -23,8 +24,8 @@ class Input extends Component {
     return (
       <div>
         <label>
-          Cantidad de BitConis:
-          <input type="number" value={this.state.value} onChange={this.handleChange} />
+          BitCoin amount:
+          <input type="number" value={this.state.value} onChange={this.handleChange} className="BTCInput" />
         </label>
         <button className="btnCoins" onClick={this.handleSubmit}>Coins </button>
       </div>

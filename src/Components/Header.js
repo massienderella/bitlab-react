@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
 import logo from './../logo-blanco.png'
+import App from './../App'
 import './../Header.css'
 
 class Header extends Component {

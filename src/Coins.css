@@ -1,0 +1,25 @@
+.coins{
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.Select{
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 30px;
+}
+
+.BTCPrices{
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 30px;
+}
+
+.BTCTitle{
+  font-size: 36;
+  color: white;
+}
+
+.BTCContainer{
+  padding-top: 15%;
+}

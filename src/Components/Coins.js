@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import firebase from 'firebase';
 import Input from './Input';
 import CoinsAPI from './CoinsAPI';
+import './../Coins.css'
 
 class Coins extends Component {
   constructor() {
@@ -28,16 +29,16 @@ class Coins extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="BTCContainer">
         <div className='coins'>
-          <h1> {this.state.coinsbit}</h1>
+          <h1> You have registered {this.state.coinsbit} BitCoins</h1>
         </div>
-        <div>
-          <h4>Ingresa tus bit coins</h4>
+        <div className="Select">
+          <h4>Register your BitCoins</h4>
           <Input setCoins= {this.setCoins} />
         </div>
-        <div>
-          <h4>El precio del Bitcon is </h4>
+        <div className="BTCPrices">
+          <h4 className="BTCTitle">BTC Prices </h4>
           <CoinsAPI/>
         </div>
       </div>

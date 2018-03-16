@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
+import BTCprices from './Components/BTCprices'
 import Coins from './Components/Coins';
 import Titles from './Components/Titles';
 import Header from './Components/Header';
@@ -16,7 +17,7 @@ class App extends Component {
         <Header />
         <Titles />
         <Register />
-        <Coins />
+        <BTCprices />
       </div>
     );
   }

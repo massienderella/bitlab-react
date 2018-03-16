@@ -7,7 +7,7 @@ class DisplayInfo extends Component {
    render (){ // dummy component: solo renderiza cosas en el DOM basado en props
     return (
       <div>
-        Precio para {this.props.description} al instante es: { this.props.rate } {this.props.code}
+        The price of BTC in {this.props.description} right now is: { this.props.rate } {this.props.code}
       </div>
     );
   }
