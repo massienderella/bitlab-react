@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 class DisplayInfo extends Component {
 
   // deberia validar props con propTypes
- 
-  render (){ // dummy component: solo renderiza cosas en el DOM basado en props
+   render (){ // dummy component: solo renderiza cosas en el DOM basado en props
     return (
       <div>
         Precio para {this.props.description} al instante es: 
@@ -12,6 +12,10 @@ class DisplayInfo extends Component {
       </div>
     );
   }
+}
+
+DisplayInfo.propTypes = {
+  rate : PropTypes.string.isRequired,
 }
 
 export default DisplayInfo;

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 
 
-
-class Input extends React.Component {
+class Input extends Component { 
   constructor(props) {
     super(props);
     this.state = {value: ''};
@@ -22,18 +21,15 @@ class Input extends React.Component {
 
   render() {
     return (
-      
       <div>
         <label>
           Cantidad de BitConis:
           <input type="number" value={this.state.value} onChange={this.handleChange} />
         </label>
         <button className="btnCoins" onClick={this.handleSubmit}>Coins </button>
-          </div>
+      </div>
     );
   }
 }
-
-
 
 export default Input; 
